@@ -17,23 +17,25 @@ function addSoundsToPage(sounds) {
     const soundDiv = document.createElement('div');
     soundDiv.className = 'sound';
 
+
     const soundTitle = document.createElement('h2');
     soundTitle.textContent = sound.title;
     soundDiv.appendChild(soundTitle);
 
-    const playButton = document.createElement('button');
-    playButton.className = 'button';
-    playButton.textContent = '🔊';
-    soundDiv.appendChild(playButton);
+
+    const icon = document.createElement('img');
+    icon.className = 'icon';
+    icon.src = 'https://clipart.info/images/ccovers/1484942357ios-emoji-speaker-with-three-sound-waves.png';
+    soundDiv.appendChild(icon);
 
     const player = document.createElement('audio');
     player.setAttribute('src', `audio/${sound.src}`);
     soundDiv.appendChild(player);
 
-    playButton.addEventListener('click', () => {
+    soundDiv.addEventListener('mousedown', () => {
       player.currentTime = 0;
       player.play();
-    });
+    })
 
     soundsElement.appendChild(soundDiv);
   });
