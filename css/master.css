@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  font-size: 2vh;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 32px;
+    margin: 0px 0px 5px 0px;
+}
+
+section {
+  
+}
+
+.container {
+  margin: 0px 3px 0px 3px;
+}
+
+.sound {
+  text-align: center;
+  text-shadow: 2px 3px rgb(93, 93, 93, .2);
+  border: 2px solid rgb(133, 134, 135, .2);
+  margin: 2px;
+  display: inline-block;
+  width: 20%;
+  border-radius: 5%;
+}
